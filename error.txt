@@ -1,0 +1,11 @@
+https://www.googleapis.com/customsearch/v1?key=${GOOGLE.API}&cx=${GOOGLE.CX}&q=${encodeURIComponent(props.name)}&searchType=image&fileType=jpg&imgSize=large&alt=json
+
+
+const getCoverImage = async () => {
+        try{
+          let r = await axios.get(`https://www.googleapis.com/customsearch/v1?key=${GOOGLE.API}&cx=${GOOGLE.CX}&q=${encodeURIComponent(props.name)}&searchType=image&fileType=jpg&imgSize=large&alt=json`)
+          setImg({uri: r.data.items[1].link})  
+        } catch (e) {
+            console.error(e)
+        }    
+    }
