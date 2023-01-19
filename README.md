@@ -24,4 +24,5 @@ Este necesara instalarea Node JS si expo-cli locala pe unitatea de calcul. Folos
 Pentru a rula aplicatia, dupa selectarea directorului folderului aplicatiei folositi comanda:
 
  » yarn start
+ » expo start
 ```
